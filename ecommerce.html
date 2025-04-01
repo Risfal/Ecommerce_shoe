@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Step Style</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+<body>
+    <!-- Header section with site name and navigation -->
+    <header>
+        <h3>Step Style</h3>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Gallery -->
+    <section class="products">
+        <h2>Our Products</h2>
+        <!-- Container for showing all products -->
+        <div class="all-products">
+            <!-- First Shoe -->
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="product-info">
+                    <h4 class="product-title">Trail Blazer</h4>
+                    <p class="product-price">1299₹</p>
+                    <!-- Button to add product to cart with onclick event -->
+                    <a class="product-btn" href="javascript:void(0);" onclick="addToCart('Trail Blazer', 1299)">Add to Cart</a>
+                </div>
+            </div>
+            
+            <!-- Second Shoe -->
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/1350560575/photo/pair-of-blue-running-sneakers-on-white-background-isolated.jpg?s=612x612&w=0&k=20&c=A3w_a9q3Gz-tWkQL6K00xu7UHdN5LLZefzPDp-wNkSU=">
+                <div class="product-info">
+                    <h4 class="product-title">Street Sport</h4>
+                    <p class="product-price">2999₹</p>
+                    <a class="product-btn" href="javascript:void(0);" onclick="addToCart('Street Sport', 2999)">Add to Cart</a>
+                </div>
+            </div>
+            
+            <!-- Third Shoe -->
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz2GQRG45ovVZ7UR2OXcpgvTdZNBqTv6ntxw&s">
+                <div class="product-info">
+                    <h4 class="product-title">Casual Sneaker</h4>
+                    <p class="product-price">999₹</p>
+                    <a class="product-btn" href="javascript:void(0);" onclick="addToCart('Casual Sneaker', 999)">Add to Cart</a>
+                </div>
+            </div>
+            
+            <!-- Fourth Shoe -->
+            <div class="product">
+                <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg">
+                <div class="product-info">
+                    <h4 class="product-title">Grand Court</h4>
+                    <p class="product-price">1999₹</p>
+                    <a class="product-btn" href="javascript:void(0);" onclick="addToCart('Grand Court', 1999)">Add to Cart</a>
+                </div>
+            </div>
+            
+            <!-- Fifth Shoe -->
+            <div class="product">
+                <img src="https://e7.pngegg.com/pngimages/786/219/png-clipart-adidas-chaussure-gazelle-sports-shoes-mens-adidas-originals-gazelle-adidas-white-outdoor-shoe.png">
+                <div class="product-info">
+                    <h4 class="product-title">Adidas Superstar</h4>
+                    <p class="product-price">1999₹</p>
+                    <a class="product-btn" href="javascript:void(0);" onclick="addToCart('Adidas Superstar', 1999)">Add to Cart</a>
+                </div>
+            </div>
+
+            <!-- Sixth Shoe -->
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4i44T-ma2uLIP4BkSGVuU4T7Wmx8bqOl9yg&s">
+                <div class="product-info">
+                    <h4 class="product-title">Nike Air 7</h4>
+                    <p class="product-price">3999₹</p>
+                    <a class="product-btn" href="javascript:void(0);" onclick="addToCart('Nike Air 7', 3999)">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart for adding products -->
+    <div class="cart">
+        <!-- Cart Icon with title -->
+        <h3>Your Cart <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+          </svg>
+        </h3>
+        
+        <!-- List for adding products -->
+        <ul id="cart-list"></ul>
+        <!-- Total price -->
+        <p>Total: ₹<span id="total-price">0</span></p>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
