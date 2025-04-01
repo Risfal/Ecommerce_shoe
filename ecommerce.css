@@ -1,0 +1,148 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items:center ;
+	margin-left: 2px;
+}
+
+body{
+	font-size: 1.7rem;
+	font-family: 'Merriweather Sans', sans-serif;
+	background: #2c3e50;
+	color: #ececec;
+	padding: 4rem;
+}
+ul {
+    list-style-type: none;
+    margin-right: 1px;
+    padding: 0;
+    display: flex;
+    
+  }
+
+  
+  
+
+ 
+ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: #ffffff;
+    
+}
+
+
+h2{
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 45px;
+	margin-top: 4rem;
+}
+
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product{
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: center;
+	width: 240px;
+	height: 400px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
+}
+
+.product .product-title, .product .product-price{
+	font-size: 18px;
+}
+
+
+
+
+
+.product img {
+	height: 200px;
+	margin: 1rem;
+}
+
+.product a:link, .product a:visited{
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #2c3e50;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	
+}
+
+/* Cart styles */
+.cart {
+    margin-top: 4rem;
+    background: #34495e;
+    padding: 2rem;
+    border-radius: 1.2rem;
+}
+
+.cart h3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.cart h3 svg {
+    margin-left: 0.5rem;
+}
+
+#cart-list {
+    display: block;
+}
+
+#cart-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #546e7a;
+    font-size: 1.4rem;
+}
+
+#cart-list button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: background-color 0.3s;
+}
+
+#cart-list button:hover {
+    background-color: #c0392b;
+}
+
+.cart p {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: right;
+}
